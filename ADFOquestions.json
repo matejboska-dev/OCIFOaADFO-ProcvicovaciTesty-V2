@@ -358,6 +358,208 @@
         "question": "In APEX, when a tree is created, how are nodes typically displayed?",
         "options": ["Custom calendar", "Calendar", "User Calendar", "Legacy Calendar"],
         "correct_answers": ["Custom calendar", "Calendar"]
+      },
+      {
+        "id": 51,
+        "type": "multiple",
+        "question": "Which of the following best describes Utilities within SQL Workshop?",
+        "options": [
+          "Enables developers to use SQL Commands to create, edit, view, run, and delete database objects.",
+          "Enables developers to use SQL Scripts to create, edit, view, run, and delete database objects.",
+          "Enables developers to build SQL queries, load and unload data from an Oracle database, generate DDL.",
+          "Enables the declarative specification of RESTful services used to access the database.",
+          "Enables developers to browse, create, and edit objects in a database."
+        ],
+        "correct_answers": [
+          "Enables developers to build SQL queries, load and unload data from an Oracle database, generate DDL."
+        ]
+      },
+      {
+        "id": 52,
+        "type": "single",
+        "question": "The Page Mode determines if the page is a normal application page or a dialog",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 53,
+        "type": "single",
+        "question": "The Code Editor within Page Designer is used to edit attributes requiring a large amount of code. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 54,
+        "type": "multiple",
+        "question": "Which of the following are the design Tabs within Page Designer in App Developer?",
+        "options": [
+          "Component View.",
+          "Help.",
+          "Layout.",
+          "Messages.",
+          "Page Search.",
+          "All of the above."
+        ],
+        "correct_answers": ["All of the above."]
+      },
+      {
+        "id": 55,
+        "type": "single",
+        "question": "Which of the following best describes the Component View tab within Page Designer in App Developer?",
+        "options": [
+          "Displays a visual representation of the page regions, items, and buttons that define a page.",
+          "Displays user interface elements and application logic by component type.",
+          "Displays errors and warnings you need to address.",
+          "Displays attribute specific help.",
+          "None of the above."
+        ],
+        "correct_answer": "Displays user interface elements and application logic by component type."
+      },
+      {
+        "id": 56,
+        "type": "multiple",
+        "question": "Which of the following are Page Mode options in App Builder? (Choose two)",
+        "options": [
+          "Custom Dialog.",
+          "Non-Modal Dialog.",
+          "Modal Dialog.",
+          "User Defined Dialog."
+        ],
+        "correct_answers": ["Non-Modal Dialog.", "Modal Dialog."]
+      },
+      {
+        "id": 57,
+        "type": "single",
+        "question": "Which of the following best describes a Non-Modal Dialog Page Mode within App Builder?",
+        "options": [
+          "An overlay window positioned within the same browser window.",
+          "A separate popup browser window.",
+          "None of the above."
+        ],
+        "correct_answer": "A separate popup browser window."
+      },
+      {
+        "id": 58,
+        "type": "multiple",
+        "question": "Developers can configure a Link Column to link to which of the following?",
+        "options": [
+          "A custom target.",
+          "A single row view.",
+          "Excluded from the report.",
+          "All of the above."
+        ],
+        "correct_answers": ["All of the above."]
+      },
+      {
+        "id": 59,
+        "type": "multiple",
+        "question": "The Download option on the Actions menu enables users to download an interactive report in which of the following formats?",
+        "options": [
+          "Adobe Portable Document Format",
+          "Comma-delimited file",
+          "HTML",
+          "Microsoft Excel",
+          "Microsoft Word Rich Text Format",
+          "All of the above"
+        ],
+        "correct_answers": ["All of the above"]
+      },
+      {
+        "id": 60,
+        "type": "single",
+        "question": "When using an interactive report, end users can change the way a developer defines how an interactive report is to be rendered to end users. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "False"
+      },
+      {
+        "id": 61,
+        "type": "single",
+        "question": "When using an interactive report, Application Express allows you to create multiple filters. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 62,
+        "type": "single",
+        "question": "Which of the following best describes the Search bar within an Interactive Report?",
+        "options": [
+          "Provides features such as change the sort order, hide columns etc.",
+          "Provides features such as the Select Columns icon.",
+          "Provides features such as customize an interactive report.",
+          "Provides features such as create and save alternative views of a report.",
+          "Provides features such as link to another page in your application."
+        ],
+        "correct_answer": "Provides features such as the Select Columns icon."
+      },
+      {
+        "id": 63,
+        "type": "single",
+        "question": "When using an interactive report, end users can add a computation to a column. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 64,
+        "type": "single",
+        "question": "When using an interactive report, end users can create both row and column filters. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 65,
+        "type": "single",
+        "question": "When using an interactive report, developers can change the way an interactive report is rendered to end users. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 66,
+        "type": "single",
+        "question": "When using an interactive report, end users cannot customize their report to include specific columns. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "False"
+      },
+      {
+        "id": 67,
+        "type": "multiple",
+        "question": "Which of the following are components of an interactive report?",
+        "options": [
+          "Actions menu.",
+          "Column heading menu.",
+          "Link to custom target.",
+          "Saved reports.",
+          "Search bar.",
+          "All of the above."
+        ],
+        "correct_answers": ["All of the above."]
+      },
+      {
+        "id": 68,
+        "type": "single",
+        "question": "End users have the ability to apply sorting and simple filtering to a classic report. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 69,
+        "type": "single",
+        "question": "In an editable interactive grid, users cannot add to, modify, and refresh the data set directly on the page. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "False"
+      },
+      {
+        "id": 70,
+        "type": "single",
+        "question": "An interactive report is a formatted result of a SQL query. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
+      },
+      {
+        "id": 71,
+        "type": "single",
+        "question": "A report is the formatted result of a SQL query. True or False?",
+        "options": ["True", "False"],
+        "correct_answer": "True"
       }
     ]
   }
