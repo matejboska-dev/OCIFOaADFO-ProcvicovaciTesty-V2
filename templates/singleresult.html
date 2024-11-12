@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Quiz Result</h2>
+        <p><strong>Question:</strong> {{ result.question }}</p>
+        <p><strong>Your Answer:</strong> {{ result.user_answer | join(", ") }}</p>
+        <p><strong>Correct Answer:</strong> {{ result.correct_answer | join(", ") }}</p>
+        {% if result.is_correct %}
+            <p class="text-success"><strong>Correct!</strong></p>
+        {% else %}
+            <p class="text-danger"><strong>Incorrect!</strong></p>
+        {% endif %}
+        <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Next Question</a>
+    </div>
+</body>
+</html>

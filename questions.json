@@ -1,0 +1,532 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Which of the following virtualizations move storage and network IO out of the hypervisor and enable lower overhead and bare metal instances?",
+      "options": ["Storage Virtualization", "Network Virtualization", "Off-box Network Virtualization", "Application Virtualization"],
+      "correct_answer": "Off-box Network Virtualization"
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "What is the maximum number of availability domains in an Oracle Cloud region?",
+      "options": ["1", "10", "Unlimited", "3", "2"],
+      "correct_answer": "3"
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Which of the following statements is true?",
+      "options": ["All OCI regions are a single AD region", "Each availability domains consists of three fault domains", "Each fault domain consists of three availability domains", "Availability domains are isolated from each other"],
+      "correct_answer": "Each availability domains consists of three fault domains"
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "A company has developed a web application in Oracle Cloud Infrastructure. What should they do to ensure that the application has the highest level of resilience?",
+      "options": ["Deploy the application across multiple Virtual Cloud Networks.", "Deploy the application across multiple Availability Domains and Fault Domains.", "Deploy the application across multiple Availability Domains and subnets.", "Deploy the application across multiple Regions and Availability Domains."],
+      "correct_answer": "Deploy the application across multiple Availability Domains and Fault Domains."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Which of the following protocols does Fastconnect use for the exchange of routing information?",
+      "options": ["RIP", "ICMP", "BGP", "OSPF"],
+      "correct_answer": "BGP"
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Which of the following represents the IP address range within the network 192.168.2.0/25?",
+      "options": ["192.168.2.0 – 192.168.2.7", "192.168.2.0 – 192.168.2.127", "192.168.2.0 – 192.168.2.65", "192.168.2.0 – 192.168.2.31"],
+      "correct_answer": "192.168.2.0 – 192.168.2.127"
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "True or False: Local Peering Gateway is required to connect two VCNs within a region?",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Which gateway can be used to provide internet access to the workloads deployed in a private subnet of a VCN?",
+      "options": ["Dynamic Routing Gateway", "NAT Gateway", "Internet Gateway", "Service Gateway"],
+      "correct_answer": "NAT Gateway"
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Which of the following represents the amount of free outbound data transfer in an OCI tenancy?",
+      "options": ["20TB", "5TB", "50TB", "10TB"],
+      "correct_answer": "10TB"
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "State whether the statement is True or False: BGP is a Static routing protocol.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Which of the following can be used to connect a customer on-premise network to Oracle Cloud?",
+      "options": ["Service Gateway", "VPN", "Internet Gateway", "DRG"],
+      "correct_answer": "VPN"
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Which of the following is the default username created on a compute instance created from Oracle Linux/CentOS?",
+      "options": ["opcusr", "opc", "root", "usr"],
+      "correct_answer": "opc"
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "State whether the statement is True or False: Bare Metal Servers are used for performance intensive workloads.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "State whether the statement is True or False: By default, block volumes are read-only.",
+      "options": ["True", "False"],
+      "correct_answer": "False"
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Which of the following OCI storage services is used to store unstructured data?",
+      "options": ["File Storage", "Object Storage", "Block Volume", "Archive Storage"],
+      "correct_answer": "Object Storage"
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "Which of the following OCI storage services is used for storing data that is seldom accessed, but requires long retention periods?",
+      "options": ["File storage", "Archive Storage", "Object Storage", "Block Volume"],
+      "correct_answer": "Archive Storage"
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Which of the following doesn’t represent the default NFS export options while creating a File System?",
+      "options": ["Source: 0.0.0.0/0 (All)", "Access: Read Write", "Require Privileged Source Port: True", "Identity Squash: None"],
+      "correct_answer": "Require Privileged Source Port: True"
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "Which of the following is not a use case for File storage service?",
+      "options": ["Big Data and Analytics", "MicroServices and Docker", "High Performance Workloads", "General Purpose File Storage"],
+      "correct_answer": "High Performance Workloads"
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "State whether the statement is True or False: The File Storage service encrypts all file system and snapshot data at rest.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "question": "Which of the following represent the features supported by object storage?",
+      "options": ["Pre-authenticated requests for accessing the object without credential", "Multipart upload for a single object", "Lifecycle rules to automatically archive or delete objects after a specified number of days", "All of the above"],
+      "correct_answers": ["All of the above"]
+    },
+    {
+      "id": 21,
+      "type": "single",
+      "question": "Which one of the following statements is false about object storage?",
+      "options": ["Minimum retention requirement for Archive Storage is 30 days", "Ideal for storing an unlimited amount of unstructured data", "Offers two distinct storage classes, “hot storage” and “cold storage”", "Employs 256-bit Advanced Encryption Standard (AES-256) to encrypt object data"],
+      "correct_answer": "Minimum retention requirement for Archive Storage is 30 days"
+    },
+    {
+      "id": 22,
+      "type": "single",
+      "question": "State whether the following statement is True or False: Object storage supports private access from Oracle Cloud Infrastructure resources in a VCN through an Internet Gateway.",
+      "options": ["True", "False"],
+      "correct_answer": "False"
+    },
+    {
+      "id": 23,
+      "type": "single",
+      "question": "Which among the following is not a protocol supported in the OCI load balancer?",
+      "options": ["UDP", "WebSocket", "HTTP/1.1", "TCP"],
+      "correct_answer": "UDP"
+    },
+    {
+      "id": 24,
+      "type": "multiple",
+      "question": "Which among the following are common load balancing policies in OCI?",
+      "options": ["Round Robin", "Least Connections", "IP Connection", "All of the Above"],
+      "correct_answers": ["All of the Above"]
+    },
+    {
+      "id": 25,
+      "type": "single",
+      "question": "State whether the following statement is True or False: Storage Gateway can be used as a general purpose Network Attached Storage server.",
+      "options": ["True", "False"],
+      "correct_answer": "False"
+    },
+    {
+      "id": 26,
+      "type": "single",
+      "question": "Which among the following is not a way to transfer data from customer on-premise to Oracle Cloud?",
+      "options": ["Storage Gateway", "Service Gateway", "FastConnect", "VPN over Internet"],
+      "correct_answer": "Service Gateway"
+    },
+    {
+      "id": 27,
+      "type": "single",
+      "question": "Which among the following protocols is used by application servers for connecting to the OCI object storage through storage gateway?",
+      "options": ["NFSv2", "NFSv1", "NFSv4", "NFSv3"],
+      "correct_answer": "NFSv4"
+    },
+    {
+      "id": 28,
+      "type": "single",
+      "question": "Which of the following is not one of the versions for Exadata database?",
+      "options": ["Sixteenth Rack", "Half Rack", "Quarter Rack", "Full Rack"],
+      "correct_answer": "Sixteenth Rack"
+    },
+    {
+      "id": 29,
+      "type": "single",
+      "question": "Which among the following represents the correct metrics used for the pricing of a VM based Database on OCI?",
+      "options": ["OCPU per Hour", "OCPU per Month", "OCPU per Minute", "OCPU per Year"],
+      "correct_answer": "OCPU per Hour"
+    },
+    {
+      "id": 30,
+      "type": "single",
+      "question": "Which of the following is the default port used by Autonomous Database?",
+      "options": ["1521", "1520", "1522", "1524"],
+      "correct_answer": "1522"
+    },
+    {
+      "id": 31,
+      "type": "single",
+      "question": "You want to leverage a managed RAC offering in OCI. Which managed DB service would you choose?",
+      "options": ["Bare Metal", "1-node Virtual machine", "2-node Virtual machine", "Exadata"],
+      "correct_answer": "2-node Virtual machine"
+    },
+    {
+      "id": 32,
+      "type": "single",
+      "question": "Which of the below statements is false about Autonomous Database?",
+      "options": ["Supports connectivity via SQL*Net, JDBC, ODBC", "On-demand scaling is not supported for Autonomous Database", "Oracle Autonomous Database can be deployed in 2 ways – dedicated and serverless", "Supports Oracle Cloud Services such as Analytics Cloud Service, GoldenGate Cloud Service, Integration Cloud Service, and others"],
+      "correct_answer": "On-demand scaling is not supported for Autonomous Database"
+    },
+    {
+      "id": 33,
+      "type": "single",
+      "question": "How many pre-defined service names are configured in tnsnames.ora for a single Autonomous Transaction Processing database instance, and what are they called?",
+      "options": ["Two - They are ATP and ADW.", "Three - They are high, medium and low.", "Five - They are tpurgent, tp, high, medium and low.", "None - There are no pre-defined service names in tnsnames.ora."],
+      "correct_answer": "Five - They are tpurgent, tp, high, medium and low."
+    },
+    {
+      "id": 34,
+      "type": "single",
+      "question": "Which of the following is not one of the use cases for DataSafe?",
+      "options": ["Sensitive Data Recovery", "Disaster Recovery", "Data Protection", "Security and User Assessment"],
+      "correct_answer": "Disaster Recovery"
+    },
+    {
+      "id": 35,
+      "type": "single",
+      "question": "True or False: Data Masking is necessary to analyze what types of data are present in the database and what are the sensitive data.",
+      "options": ["True", "False"],
+      "correct_answer": "False"
+    },
+    {
+      "id": 36,
+      "type": "single",
+      "question": "Which of the following is not a characteristic of user activity auditing?",
+      "options": ["Provision audit, compliance, and alert policies", "Comprehensive assessment of security parameters", "Collect audit data from databases, and track sensitive operation", "Collect audit data from databases, and track sensitive operation"],
+      "correct_answer": "Comprehensive assessment of security parameters"
+    },
+    {
+      "id": 37,
+      "type": "single",
+      "question": "Which of the following is not one of the supported DNS records for OCI DNS Service?",
+      "options": ["DNSKEY", "CERT", "TXT", "NAPTR"],
+      "correct_answer": "NAPTR"
+    },
+    {
+      "id": 38,
+      "type": "single",
+      "question": "Which of the following is the DNS server that takes website names or URL requests from users and checks the records obtained from authoritative DNS servers for the associated IP address?",
+      "options": ["Recursive DNS", "DNS Stub Resolver Server", "TLD Nameservers", "Root DNS Server"],
+      "correct_answer": "Recursive DNS"
+    },
+    {
+      "id": 39,
+      "type": "single",
+      "question": "True or False: Default NS and SOA records are automatically generated when a Zone is created.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 40,
+      "type": "single",
+      "question": "True or False: Conditional steering can be used for zero rating services so that preferred ASNs can be directed to free resources while all other traffic can be directed to paid resources.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 41,
+      "type": "single",
+      "question": "Which of the following is not the common use case for DNS Traffic Management?",
+      "options": ["Zero-Rating Service", "Transaction based Steering", "Hybrid Environment", "Cloud Migration"],
+      "correct_answer": "Transaction based Steering"
+    },
+    {
+      "id": 42,
+      "type": "single",
+      "question": "Which of the following is not one of the components of the Health Checks service?",
+      "options": ["Vantage Points", "On-Demand Probes", "Monitors", "Child Zone"],
+      "correct_answer": "Child Zone"
+    },
+    {
+      "id": 43,
+      "type": "single",
+      "question": "True or False: OCI WAF uses OWASP ModSecurity Core Rule Set (CRS) to protect against the most common web vulnerabilities.",
+      "options": ["True", "False"],
+      "correct_answer": "False"
+    },
+    {
+      "id": 44,
+      "type": "single",
+      "question": "True or False: OCI WAF cannot protect the workloads against a missing function-level access control vulnerability.",
+      "options": ["True", "False"],
+      "correct_answer": "False"
+    },
+    {
+      "id": 45,
+      "type": "single",
+      "question": "Which of the following is not the common use case for OCI WAF?",
+      "options": ["Bot management – dynamically blocking bad bots", "Protection against layer 7 distributed denial-of service (DDoS) attacks", "Protection against SYN flooding", "Protect against cross-site scripting (XSS) and SQL injection, activities"],
+      "correct_answer": "Protection against SYN flooding"
+    },
+    {
+      "id": 46,
+      "type": "single",
+      "question": "Which of the following is a resource manager job type?",
+      "options": ["Stack", "Apply", "Destroy", "Plan"],
+      "correct_answer": "Stack"
+    },
+    {
+      "id": 47,
+      "type": "single",
+      "question": "Which Oracle Cloud Infrastructure (OCI) service can you use to create and manage your infrastructure?",
+      "options": ["OCI API Gateway", "OCI Event Service", "OCI Resource Manager", "OCI Container Engine for Kubernetes"],
+      "correct_answer": "OCI Resource Manager"
+    },
+    {
+      "id": 48,
+      "type": "single",
+      "question": "Which of the following represents the job lifecycle state?",
+      "options": ["Terminated", "In Progress", "Canceling", "Accepted"],
+      "correct_answer": "Terminated"
+    },
+    {
+      "id": 49,
+      "type": "single",
+      "question": "Which of the following represents the maximum duration for which messages are retained in an OCI streaming service?",
+      "options": ["7 Days", "15 Days", "30 Days", "10 Days"],
+      "correct_answer": "7 Days"
+    },
+    {
+      "id": 50,
+      "type": "multiple",
+      "question": "What rules allow you to deliver events to certain Oracle Cloud Infrastructure services? (Choose all correct answers)",
+      "options": ["Streaming", "Object Storage", "Notifications", "Accounts", "Functions"],
+      "correct_answers": ["Streaming", "Notifications", "Functions"]
+    },
+    {
+      "id": 51,
+      "type": "single",
+      "question": "True or False: Oracle Cloud Infrastructure Events enables you to create automation based on the state changes of resources throughout your tenancy.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 52,
+      "type": "single",
+      "question": "What is the maximum memory threshold for Oracle functions?",
+      "options": ["4096 MB", "512 MB", "2048 MB", "1024 MB"],
+      "correct_answer": "1024 MB"
+    },
+    {
+      "id": 53,
+      "type": "single",
+      "question": "When starting a container to run Oracle functions, the container runs processes as which user?",
+      "options": [
+        "Oracle functions use the same OCI user to run any process inside the container with no added privileges.",
+        "Oracle functions use fn user to run the process inside the container with no added privileges.",
+        "Oracle functions do not use any default user, it’s the responsibility of the admin to specify one.",
+        "Oracle functions use root to run any process inside the container."
+      ],
+      "correct_answer": "Oracle functions use fn user to run the process inside the container with no added privileges."
+    },
+    {
+      "id": 54,
+      "type": "single",
+      "question": "What is the maximum execution timeout for Oracle functions?",
+      "options": ["60 Seconds", "60 Minutes", "120 Seconds", "3600 Seconds"],
+      "correct_answer": "120 Seconds"
+    },
+    {
+      "id": 55,
+      "type": "single",
+      "question": "A DevOps engineer wants to push an image to OCIR and that image needs to be tagged appropriately so it identifies the docker registry where the image needs to be pushed. Which of the following will be added to the image tag?",
+      "options": ["Auth Tokens", "Tenancy OCID", "Object Storage Namespace", "Tenancy Name"],
+      "correct_answer": "Object Storage Namespace"
+    },
+    {
+      "id": 56,
+      "type": "single",
+      "question": "Which of the following docker commands is not required for saving an image to OCIR?",
+      "options": ["docker login", "docker push", "docker tag", "docker save"],
+      "correct_answer": "docker save"
+    },
+    {
+      "id": 57,
+      "type": "single",
+      "question": "Which of the following is required to login to the OCIR Container Registry?",
+      "options": ["OAuth 2.0 Client Credentials", "Auth Tokens", "Secret Keys", "API keys"],
+      "correct_answer": "Auth Tokens"
+    },
+    {
+      "id": 58,
+      "type": "single",
+      "question": "True or False: Kubernetes cluster worker nodes should be placed in a private subnet of the VCN.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 59,
+      "type": "single",
+      "question": "Which of the following statements is incorrect about the Oracle Container Engine for Kubernetes (OKE)?",
+      "options": [
+        "Quick create option for Kubernetes cluster creates VCN, NAT Gateway and Internet Gateway along with Kubernetes cluster and worker nodes",
+        "Worker nodes in node pool can be of different shapes",
+        "It is possible to scale up the number of nodes in a node pool",
+        "You have to only pay for the worker nodes; you do not need to pay for the master node"
+      ],
+      "correct_answer": "Worker nodes in node pool can be of different shapes"
+    },
+    {
+      "id": 60,
+      "type": "single",
+      "question": "Which of the following is not a method to create a Kubernetes cluster?",
+      "options": ["OCI SDK", "Custom Create-Console", "Terraform Script", "Quick Create-Console"],
+      "correct_answer": "OCI SDK"
+    },
+    {
+      "id": 61,
+      "type": "single",
+      "question": "You have created a new compartment called PRODUCTION to host some Production apps. You have also created users in your tenancy and added them to a group called 'Production_Group'. Your users are still unable to access the PRODUCTION compartment. How can you resolve this situation?",
+      "options": [
+        "Write IAM policy for each specific user granting them access to the production compartment",
+        "Write an IAM Policy for Production Group granting it access to production compartment",
+        "Your users get automatic access to all compartments. No further action needed",
+        "Every compartment you create by default gets a certain set of policies. No further action is needed"
+      ],
+      "correct_answer": "Write an IAM Policy for Production Group granting it access to production compartment"
+    },
+    {
+      "id": 62,
+      "type": "single",
+      "question": "True or False: After a key vault is deleted, it cannot be recovered.",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 63,
+      "type": "multiple",
+      "question": "You can Filter Costs by which of the following? (Choose two)",
+      "options": ["Credits", "Compartment", "Region", "Tags", "Availability Domain"],
+      "correct_answers": ["Compartment", "Tags"]
+    },
+    {
+      "id": 64,
+      "type": "multiple",
+      "question": "OCI Budgets are used to achieve which of the following? Choose the two best options.",
+      "options": [
+        "Track actual and forecasted spending for the entire tenancy or per compartment",
+        "Suspend the account upon exceeding budget threshold",
+        "Do not allow creation of additional resources",
+        "Set alerts on your budgets at predefined thresholds to get notified"
+      ],
+      "correct_answers": [
+        "Track actual and forecasted spending for the entire tenancy or per compartment",
+        "Set alerts on your budgets at predefined thresholds to get notified"
+      ]
+    },
+    {
+      "id": 65,
+      "type": "multiple",
+      "question": "Oracle Cloud Infrastructure SLA covers which of the following? (Choose three)",
+      "options": ["Credits", "Availability", "Sustainability", "Manageability", "Performance"],
+      "correct_answers": ["Availability", "Manageability", "Performance"]
+    },
+    {
+      "id": 66,
+      "type": "single",
+      "question": "True or False: You must have a Valid CSI and Support Account in order to submit a Service Request",
+      "options": ["True", "False"],
+      "correct_answer": "True"
+    },
+    {
+      "id": 67,
+      "type": "single",
+      "question": "Where will you find your Customer Support Identifier?",
+      "options": [
+        "Welcome Letter",
+        "In your contract document",
+        "Tenancy Details Page in OCI Console",
+        "All of the above",
+        "None of the above"
+      ],
+      "correct_answer": "All of the above"
+    },
+    {
+      "id": 68,
+      "type": "multiple",
+      "question": "When customers deploy their workload on OCI, they are responsible for which of the following? (Choose three)",
+      "options": [
+        "Storage and physical security",
+        "Setting up strong IAM policies",
+        "Isolation of compute, Virtual cloud network",
+        "User credentials including strong password, password renewal, secure user access to OCI",
+        "Key management"
+      ],
+      "correct_answers": [
+        "Setting up strong IAM policies",
+        "User credentials including strong password, password renewal, secure user access to OCI",
+        "Key management"
+      ]
+    },
+    {
+      "id": 69,
+      "type": "multiple",
+      "question": "Which of the following design principles deploy, operate, and use your applications securely in Oracle Cloud Infrastructure? (Choose all correct answers)",
+      "options": [
+        "Implement the principles of least privilege and separation of duties",
+        "Protect data at rest and in transit",
+        "Understand the shared security responsibility model",
+        "Implement multi-layer security mechanisms",
+        "All of the above"
+      ],
+      "correct_answers": ["All of the above"]
+    }
+  ]
+}

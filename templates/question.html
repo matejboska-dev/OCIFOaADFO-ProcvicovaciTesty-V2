@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Question</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Quiz Question</h2>
+        <p><strong>{{ question.question }}</strong></p>
+        <form action="{{ url_for('submit') }}" method="post">
+            {% if question.type == 'single' %}
+                {% for option in question.options %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer" value="{{ option }}" required>
+                        <label class="form-check-label">{{ option }}</label>
+                    </div>
+                {% endfor %}
+            {% elif question.type == 'multiple' %}
+                {% for option in question.options %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="answer" value="{{ option }}">
+                        <label class="form-check-label">{{ option }}</label>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
