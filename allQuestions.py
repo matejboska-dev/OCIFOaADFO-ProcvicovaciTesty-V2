@@ -1,21 +1,28 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import json
+import random
 
 app = Flask(__name__)
-app.secret_key = 'some_secret_key'  # Klíč pro session
+app.secret_key = 'some_secret_key'  # Secret key for session
 
-# Načítání otázek ze souborů JSON
+# Function to load questions from JSON and shuffle answers
 def load_questions(file_name):
     with open(file_name, 'r', encoding='utf-8') as file:
         data = json.load(file)
-    return data['questions']
+    questions = data['questions']
+    
+    # Shuffle the options for each question
+    for question in questions:
+        random.shuffle(question['options'])
+    
+    return questions
 
-# Úvodní stránka pro výběr typu otázek
+# Route for choosing question type
 @app.route('/')
 def choose_type():
     return render_template('choose_type.html')
 
-# Uloží vybraný typ otázek a přejde na stránku s otázkami
+# Save chosen question type and redirect to quiz
 @app.route('/set_type', methods=['POST'])
 def set_type():
     question_type = request.form.get('question_type')
@@ -25,7 +32,7 @@ def set_type():
         session['question_file'] = 'OCIFOquestions.json'
     return redirect(url_for('index'))
 
-# Zobrazí všechny otázky podle zvoleného typu
+# Display quiz questions based on chosen type
 @app.route('/quiz')
 def index():
     question_file = session.get('question_file')
@@ -35,7 +42,7 @@ def index():
     questions = load_questions(question_file)
     return render_template('index.html', questions=questions)
 
-# Vyhodnotí odpovědi a zobrazí výsledky
+# Evaluate answers and display results
 @app.route('/submit', methods=['POST'])
 def submit():
     question_file = session.get('question_file')
